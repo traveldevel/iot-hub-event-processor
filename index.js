@@ -112,7 +112,7 @@ var fnUpdateDevice = function(error, response, body, msg, deviceId){
 }
 
 // device found request callback
-var fnProcessEventRulesAfterGetDevice = function(error, response, body, msg) {
+var fnProcessEventRulesAfterGetDevice = function(error, response, body, msg, device) {
 
     console.log("Device info : ", device); 
 
@@ -171,7 +171,7 @@ function onMessage(message) {
         
             var device = body.value[0];
             if(device["_id"].length > 0){
-                fnProcessEventRulesAfterGetDevice(error, response, body, msg);
+                fnProcessEventRulesAfterGetDevice(error, response, body, msg, device);
             }
         }
     );
