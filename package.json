@@ -1,7 +1,7 @@
 {
-  "name": "iot-hub-ingestion-processor",
+  "name": "iot-hub-event-processor",
   "version": "0.1.0",
-  "description": "ingestion processes Kafka messages",
+  "description": "event ru;es processes Kafka messages",
   "main": "index.js",
   "engines": {
     "node": "8.5.0"
@@ -14,7 +14,7 @@
   "keywords": [
     "iot",
     "hub",
-    "ingestion",
+    "event",
     "processing"
   ],
   "author": "Travel Devel",
